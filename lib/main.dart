@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musicapp/Theme/color.dart';
 import 'package:musicapp/bottomnavigation.dart';
 
 void main() {
@@ -13,8 +14,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          appBarTheme: AppBarTheme(
+            backgroundColor: black,
+            foregroundColor: primaryColor,
+            elevation: 0,
+          ),
+          fontFamily: "Overpass",
+          scaffoldBackgroundColor: black,
+          primaryColor: primaryColor,
+          secondaryHeaderColor: primary2Color,
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.indigo)
+              .copyWith(background: white)),
       home: const Main(),
     );
   }

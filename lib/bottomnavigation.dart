@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:musicapp/Theme/color.dart';
 import 'package:musicapp/screens/homepage.dart';
 import 'package:musicapp/screens/searchpage.dart';
 
@@ -35,7 +36,7 @@ class _BottombarState extends State<Bottombar> {
               borderRadius: const BorderRadius.all(Radius.circular(20)),
               child: BottomNavigationBar(
                   type: BottomNavigationBarType.fixed,
-                  backgroundColor: Colors.black,
+                  backgroundColor: transparntgrey,
                   selectedItemColor: Colors.white,
                   unselectedItemColor: Colors.grey,
                   showSelectedLabels: false,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musicapp/Theme/color.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,8 +11,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Home Page")),
+    return Scaffold(
+      body: Center(
+          child: Text(
+        "Home page",
+        style: TextStyle(color: white),
+      )),
     );
   }
 }
