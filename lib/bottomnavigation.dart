@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:musicapp/Theme/color.dart';
 import 'package:musicapp/screens/homepage.dart';
+import 'package:musicapp/screens/profile.dart';
 import 'package:musicapp/screens/searchpage.dart';
 
 int selectedIndex = 0;
@@ -18,7 +19,7 @@ class _BottombarState extends State<Bottombar> {
     const HomePage(),
     const Search(),
     const HomePage(),
-    const Search(),
+    const Profile(),
   ];
   @override
   Widget build(BuildContext context) {

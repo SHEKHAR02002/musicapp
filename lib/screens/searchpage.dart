@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:musicapp/Theme/color.dart';
+import 'package:musicapp/data/data.dart';
 import 'package:musicapp/widget/recentfavcard.dart';
 
 class Search extends StatefulWidget {
@@ -88,18 +89,3 @@ class _SearchState extends State<Search> {
     ));
   }
 }
-
-class Choice {
-  const Choice({required this.title, required this.icon});
-  final String title;
-  final String icon;
-}
-
-const List<Choice> choices = <Choice>[
-  Choice(title: 'Bright Hitd', icon: 'assets/images/one.png'),
-  Choice(title: 'Millions', icon: 'assets/images/two.jpg'),
-  Choice(title: 'Family', icon: 'assets/images/three.jpg'),
-  Choice(title: 'Millions', icon: 'assets/images/one.png'),
-  Choice(title: 'Hindi', icon: 'assets/images/two.jpg'),
-  Choice(title: 'Marathi', icon: 'assets/images/three.jpg'),
-];

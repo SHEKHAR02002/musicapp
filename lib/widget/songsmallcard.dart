@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:musicapp/Theme/color.dart';
+import 'package:musicapp/data/data.dart';
 
 class SongCarssmall extends StatefulWidget {
-  const SongCarssmall({super.key});
+  final Page1data data;
+  const SongCarssmall({super.key, required this.data});
 
   @override
   State<SongCarssmall> createState() => _SongCarssmallState();
@@ -33,7 +35,7 @@ class _SongCarssmallState extends State<SongCarssmall> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "title",
+                      widget.data.title,
                       style: TextStyle(
                         fontSize: 20,
                         color: white,
@@ -43,7 +45,7 @@ class _SongCarssmallState extends State<SongCarssmall> {
                       height: 3,
                     ),
                     Text(
-                      "subtitle",
+                      widget.data.subtitle,
                       style: TextStyle(
                         fontSize: 12,
                         color: grey,

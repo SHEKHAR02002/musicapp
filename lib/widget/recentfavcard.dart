@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicapp/Theme/color.dart';
-import 'package:musicapp/screens/searchpage.dart';
+import 'package:musicapp/data/data.dart';
 
 class RecentFavCard extends StatefulWidget {
   final Choice choice;
