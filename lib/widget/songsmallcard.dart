@@ -40,12 +40,14 @@ class _SongCarssmallState extends State<SongCarssmall> {
               children: [
                 Stack(children: [
                   ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Container(
-                        color: white,
-                        height: 50,
-                        width: 50,
-                      )),
+                    borderRadius: BorderRadius.circular(10),
+                    child: Image.asset(
+                      'assets/images/page1one.jpg',
+                      height: 50.0,
+                      width: 50.0,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
                 ]),
                 const SizedBox(
                   width: 20,
