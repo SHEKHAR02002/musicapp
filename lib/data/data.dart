@@ -14,13 +14,24 @@ const List<Choice> choices = <Choice>[
 ];
 
 class Page1data {
-  const Page1data({required this.title, required this.subtitle});
+  const Page1data(
+      {required this.title, required this.subtitle, required this.music});
   final String title;
   final String subtitle;
+  final String music;
 }
 
 const List<Page1data> page1 = <Page1data>[
-  Page1data(title: "I'am Good(Blue)", subtitle: 'David Guetta & Bebe Rexis'),
-  Page1data(title: 'Under the Influnce', subtitle: 'Charis Brown'),
-  Page1data(title: 'Forgot me', subtitle: 'Lawis Capaid'),
+  Page1data(
+      title: "I'am Good(Blue)",
+      subtitle: 'David Guetta & Bebe Rexis',
+      music: 'assets/music/music1.mp3'),
+  Page1data(
+      title: 'Under the Influnce',
+      subtitle: 'Charis Brown',
+      music: 'assets/music/music2.mp3'),
+  Page1data(
+      title: 'Forgot me',
+      subtitle: 'Lawis Capaid',
+      music: 'assets/music/music3.mp3'),
 ];
